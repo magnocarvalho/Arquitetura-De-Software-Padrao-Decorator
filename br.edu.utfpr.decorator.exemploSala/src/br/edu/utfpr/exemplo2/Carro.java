@@ -11,8 +11,9 @@ package br.edu.utfpr.exemplo2;
  */
 public class Carro {
     
-
-    
-    
-    
+    public static void main(String[] args) 
+    {
+        ServicoAutomotivo servico = new Alinhamento(new TrocaDeOleo(new RevisaoBasica()));
+        System.out.println(servico.descricao());
+    }
 }
